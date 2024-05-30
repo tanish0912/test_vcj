@@ -1,0 +1,9 @@
+[submodule "apps/erpnext"]
+	path = apps/erpnext
+	url = https://github.com/frappe/erpnext
+[submodule "apps/payments"]
+	path = apps/payments
+	url = https://github.com/frappe/payments
+[submodule "apps/india_compliance"]
+	path = apps/india_compliance
+	url = https://github.com/resilient-tech/india-compliance

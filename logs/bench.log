@@ -1,0 +1,123 @@
+2024-05-30 04:25:19,419 DEBUG cd frappe-bench && python3 -m venv env
+2024-05-30 04:25:21,115 DEBUG cd frappe-bench && /Users/tanishkothari/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2024-05-30 04:25:21,436 DEBUG cd frappe-bench && /Users/tanishkothari/frappe-bench/env/bin/python -m pip install --quiet wheel
+2024-05-30 04:25:21,826 LOG Getting frappe
+2024-05-30 04:25:21,826 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git  --depth 1 --origin upstream
+2024-05-30 04:25:24,591 LOG Installing frappe
+2024-05-30 04:25:24,592 DEBUG cd /Users/tanishkothari/frappe-bench && /Users/tanishkothari/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/tanishkothari/frappe-bench/apps/frappe 
+2024-05-30 04:25:44,695 DEBUG cd /Users/tanishkothari/frappe-bench/apps/frappe && yarn install --check-files
+2024-05-30 04:25:49,088 DEBUG cd /Users/tanishkothari/frappe-bench && supervisorctl restart frappe:
+2024-05-30 04:25:49,179 WARNING cd /Users/tanishkothari/frappe-bench && supervisorctl restart frappe: executed with exit code 4
+2024-05-30 04:25:49,179 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-05-30 04:25:49,179 DEBUG cd frappe-bench && bench build
+2024-05-30 04:25:49,281 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench build
+2024-05-30 04:25:58,409 LOG setting up backups
+2024-05-30 04:25:58,419 LOG backups were set up
+2024-05-30 04:25:58,420 INFO Bench frappe-bench initialized
+2024-05-30 04:26:21,128 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench start
+2024-05-30 04:26:43,318 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench start
+2024-05-30 04:28:46,396 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench start
+2024-05-30 04:29:59,066 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench start
+2024-05-30 04:29:59,419 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench serve --port 8000
+2024-05-30 04:29:59,420 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench worker
+2024-05-30 04:29:59,422 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench watch
+2024-05-30 04:29:59,430 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench schedule
+2024-05-30 04:31:33,602 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench new-site testsite.com
+2024-05-30 04:34:27,893 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench --site testsite.com install-app erpnext
+2024-05-30 04:35:04,206 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench get-app erpnext
+2024-05-30 04:35:04,693 LOG Getting erpnext
+2024-05-30 04:35:04,693 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git  --depth 1 --origin upstream
+2024-05-30 04:35:08,391 LOG Installing erpnext
+2024-05-30 04:35:08,391 DEBUG cd /Users/tanishkothari/frappe-bench && /Users/tanishkothari/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/tanishkothari/frappe-bench/apps/erpnext 
+2024-05-30 04:35:19,950 DEBUG cd /Users/tanishkothari/frappe-bench/apps/erpnext && yarn install --check-files
+2024-05-30 04:35:20,267 DEBUG bench build --app erpnext
+2024-05-30 04:35:20,366 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench build --app erpnext
+2024-05-30 04:35:24,518 DEBUG cd /Users/tanishkothari/frappe-bench && supervisorctl restart frappe:
+2024-05-30 04:35:24,615 WARNING cd /Users/tanishkothari/frappe-bench && supervisorctl restart frappe: executed with exit code 4
+2024-05-30 04:35:24,615 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-05-30 04:35:30,024 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench version
+2024-05-30 04:35:35,665 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench --site testsite.com install-app erpnext
+2024-05-30 04:36:11,839 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench --site testsite.com install-app erpnext
+2024-05-30 04:36:28,509 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench --site testsite.com migrate
+2024-05-30 04:38:34,897 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench start
+2024-05-30 04:38:35,229 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench schedule
+2024-05-30 04:38:35,242 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench watch
+2024-05-30 04:38:35,245 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench serve --port 8000
+2024-05-30 04:38:35,256 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench worker
+2024-05-30 04:40:45,373 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench --site testsite.com add-to-hosts
+2024-05-30 04:48:24,506 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench start
+2024-05-30 04:48:24,844 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench serve --port 8000
+2024-05-30 04:48:24,846 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench worker
+2024-05-30 04:48:24,850 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench watch
+2024-05-30 04:48:24,859 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench schedule
+2024-05-30 04:57:43,145 INFO /Users/tanishkothari/.local/bin/bench restart
+2024-05-30 04:57:43,340 DEBUG cd /Users/tanishkothari/frappe-bench && sudo supervisorctl restart frappe:
+2024-05-30 04:57:43,440 WARNING cd /Users/tanishkothari/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-05-30 04:57:43,440 WARNING /Users/tanishkothari/.local/bin/bench restart executed with exit code 1
+2024-05-30 04:57:49,553 INFO /Users/tanishkothari/.local/bin/bench start
+2024-05-30 04:57:49,934 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench schedule
+2024-05-30 04:57:49,934 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench watch
+2024-05-30 04:57:49,934 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench serve --port 8000
+2024-05-30 04:57:49,934 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench worker
+2024-05-30 05:02:28,834 INFO /Users/tanishkothari/.local/bin/bench start
+2024-05-30 05:02:29,958 INFO /Users/tanishkothari/.local/bin/bench start
+2024-05-30 05:02:32,082 INFO /Users/tanishkothari/.local/bin/bench start
+2024-05-30 05:02:35,207 INFO /Users/tanishkothari/.local/bin/bench start
+2024-05-30 05:03:28,011 INFO /Users/tanishkothari/.local/bin/bench start
+2024-05-30 05:03:29,137 INFO /Users/tanishkothari/.local/bin/bench start
+2024-05-30 05:03:31,262 INFO /Users/tanishkothari/.local/bin/bench start
+2024-05-30 05:03:34,386 INFO /Users/tanishkothari/.local/bin/bench start
+2024-05-30 05:05:28,634 INFO /Users/tanishkothari/.local/bin/bench start
+2024-05-30 05:05:28,959 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench schedule
+2024-05-30 05:05:28,959 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench worker
+2024-05-30 05:05:28,960 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench serve --port 8000
+2024-05-30 05:05:28,965 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench watch
+2024-05-30 05:08:24,805 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench get-app https://github.com/resilient-tech/india-compliance.git
+2024-05-30 05:08:24,819 LOG Getting india-compliance
+2024-05-30 05:08:24,819 DEBUG cd ./apps && git clone https://github.com/resilient-tech/india-compliance.git  --depth 1 --origin upstream
+2024-05-30 05:08:26,048 LOG Installing india_compliance
+2024-05-30 05:08:26,048 DEBUG cd /Users/tanishkothari/frappe-bench && /Users/tanishkothari/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/tanishkothari/frappe-bench/apps/india_compliance 
+2024-05-30 05:08:31,484 DEBUG bench build --app india_compliance
+2024-05-30 05:08:31,580 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench build --app india_compliance
+2024-05-30 05:08:33,434 DEBUG cd /Users/tanishkothari/frappe-bench && supervisorctl restart frappe:
+2024-05-30 05:08:33,857 INFO /Users/tanishkothari/.local/bin/bench start
+2024-05-30 05:08:34,174 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench serve --port 8000
+2024-05-30 05:08:34,183 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench watch
+2024-05-30 05:08:34,187 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench schedule
+2024-05-30 05:08:34,189 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench worker
+2024-05-30 05:10:03,467 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench --site testsite.com install-app india_compliance
+2024-05-30 05:10:23,667 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench --site testsite.com migrate
+2024-05-30 05:10:36,670 INFO /Users/tanishkothari/.local/bin/bench start
+2024-05-30 05:10:36,971 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench schedule
+2024-05-30 05:10:36,971 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench watch
+2024-05-30 05:10:36,973 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench serve --port 8000
+2024-05-30 05:10:36,994 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench worker
+2024-05-30 05:12:39,741 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench get-app payments
+2024-05-30 05:12:40,234 LOG Getting payments
+2024-05-30 05:12:40,234 DEBUG cd ./apps && git clone https://github.com/frappe/payments.git  --depth 1 --origin upstream
+2024-05-30 05:12:41,218 LOG Installing payments
+2024-05-30 05:12:41,218 DEBUG cd /Users/tanishkothari/frappe-bench && /Users/tanishkothari/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/tanishkothari/frappe-bench/apps/payments 
+2024-05-30 05:12:46,043 DEBUG bench build --app payments
+2024-05-30 05:12:46,120 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench build --app payments
+2024-05-30 05:12:47,648 DEBUG cd /Users/tanishkothari/frappe-bench && supervisorctl restart frappe:
+2024-05-30 05:12:48,091 INFO /Users/tanishkothari/.local/bin/bench start
+2024-05-30 05:12:48,392 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench schedule
+2024-05-30 05:12:48,397 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench worker
+2024-05-30 05:12:48,412 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench watch
+2024-05-30 05:12:48,424 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench serve --port 8000
+2024-05-30 05:13:08,652 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench --site testsite.com install-app payments
+2024-05-30 05:13:17,392 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench --site testsite.com migrate
+2024-05-30 05:13:26,273 INFO /Users/tanishkothari/.local/bin/bench start
+2024-05-30 05:13:26,569 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench serve --port 8000
+2024-05-30 05:13:26,573 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench schedule
+2024-05-30 05:13:26,573 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench watch
+2024-05-30 05:13:26,610 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench worker
+2024-05-30 05:14:08,390 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench --site testsite.com uninstall-app payments
+2024-05-30 05:14:20,684 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench --site testsite.com migrate
+2024-05-30 05:14:29,274 INFO /Users/tanishkothari/.local/bin/bench start
+2024-05-30 05:14:29,619 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench serve --port 8000
+2024-05-30 05:14:29,619 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench worker
+2024-05-30 05:14:29,620 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench schedule
+2024-05-30 05:14:29,620 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench watch
+2024-05-30 18:00:01,188 INFO /Library/Frameworks/Python.framework/Versions/3.12/bin/bench --verbose --site all backup
+2024-05-30 18:00:01,196 INFO /Users/tanishkothari/.local/bin/bench --verbose --site all backup
